@@ -778,14 +778,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked .custom-checkbox {
+.checkbox-input:checked {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
-
-.checkbox-input:checked .custom-checkbox .check-icon {
-  fill: #ffffff;
 }
 
 .checkbox-label {
