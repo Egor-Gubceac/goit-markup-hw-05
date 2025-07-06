@@ -486,24 +486,20 @@
     </footer>
     <div class="backdrop" data-modal>
       <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="pop-up">
-          <button class="modal-close-btn" data-modal-close>
-            <svg class="close-button-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-
-          <p class="form-title">
-            Leave your contacts and we will call you back
-          </p>
-
           <fieldset class="pop-up-field">
             <label for="name">Name</label>
             <div class="modal-input-wrapper">
               <input
-                id="name"
+                id="user-name"
                 type="text"
-                name="name"
+                name="user-name"
                 placeholder="Your name"
                 class="pop-up-field-input"
               />
@@ -517,9 +513,9 @@
             <label for="phone">Phone</label>
             <div class="modal-input-wrapper">
               <input
-                id="phone"
+                id="user-phone"
                 type="tel"
-                name="phone"
+                name="user-phone"
                 placeholder="Your phone number"
                 class="pop-up-field-input"
               />
@@ -533,9 +529,9 @@
             <label for="email">Email</label>
             <div class="modal-input-wrapper">
               <input
-                id="email"
+                id="user-email"
                 type="email"
-                name="email"
+                name="user-email"
                 placeholder="Your Email"
                 class="pop-up-field-input"
               />
@@ -549,17 +545,23 @@
             <label for="comment">Comment</label>
             <div class="modal-input-wrapper">
               <textarea
-                name="comment"
+                name="user-comment"
                 placeholder="Text input"
                 class="pop-up-textarea"
-                id="comment"
+                id="user-comment"
               ></textarea>
             </div>
           </fieldset>
 
           <fieldset class="privacy">
-            <label class="checkbox-label">
-              <input class="checkbox-input" type="checkbox" name="privacy" />
+            <label class="checkbox-label" for="user-privacy">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              />
               <span class="custom-checkbox">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checked"></use>
