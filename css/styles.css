@@ -677,7 +677,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  border: 1px solid rgba(46, 47, 66, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   position: absolute;
   border-radius: 50%;
@@ -688,6 +688,7 @@ img {
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -702,9 +703,10 @@ img {
   fill: #ffffff;
 }
 
-.modal-close-btn:hover {
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .form-title {
