@@ -514,13 +514,30 @@ img {
 
 .subscribe {
   margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-form {
   max-width: 453px;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
 }
 
 .form-row {
@@ -530,6 +547,7 @@ img {
 }
 
 .form-label {
+  display: flex;
   font: 500 16px / 1.5 "Roboto", sans-serif;
   letter-spacing: 0.02em;
   color: #fff;
@@ -541,21 +559,22 @@ img {
 }
 
 .form-input {
-  width: 100%;
+  width: 264px;
   height: 40px;
-  padding: 8px 40px 8px 16px;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  border: 1px solid #ffffff;
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
   color: #ffffff;
-  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input::placeholder {
   color: #ffffff;
-  opacity: 1;
 }
 .form-input:focus {
   border-color: #ffffff;
@@ -571,21 +590,20 @@ img {
 }
 
 .subscribe-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 16px;
-  border-radius: 4px;
-  padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  background: #4d5ae5;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font: 500 16px / 1.5 "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
+  background-color: #4d5ae5;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -597,6 +615,7 @@ img {
 
 .button-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .icon-subscribe {
